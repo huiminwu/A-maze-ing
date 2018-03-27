@@ -14,7 +14,11 @@ legal means
 Given a maze, the recursive abstraction can solve a maze with one less stepping stone (perhaps multiple times) and the "E" moved over.
 ## Algorithm
 If "E" and "0" are adjacent, return true.
+
 If not stepping stones next to "E", return false.
+
 Else:
+
   For each stepping stone next to "E":
+  
     stuff
