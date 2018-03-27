@@ -15,19 +15,21 @@ Given a maze, the recursive abstraction can solve a maze with one less stepping 
 ## Base Case
 The treasure and explorer are next to each other or the explorer has nowhere to go.
 ## Algorithm
-If "E" and "0" are adjacent, return true.
+```
+if "E" and "0" are adjacent, return true.
 
-If not stepping stones next to "E", return false.
+if not stepping stones next to "E", return false.
 
-Else, for each stepping stone next to "E":
+else, for each stepping stone next to "E":
   
-  + replace the stepping stone with the "E"
+   replace the stepping stone with the "E"
   
-  + if the maze can be solved, return true
+   if the maze can be solved, return true
   
-  + recover the stepping stone and put the "E" back
+   recover the stepping stone and put the "E" back
 
 return false
+```
 
 ## Classes
 ## Version *n* Wish List
