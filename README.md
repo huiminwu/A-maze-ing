@@ -19,10 +19,9 @@ If "E" and "0" are adjacent, return true.
 
 If not stepping stones next to "E", return false.
 
-Else:
-
-  For each stepping stone next to "E":
+Else, for each stepping stone next to "E":
   
-    stuff
+  
+
 ## Classes
-## Version*n* Wish List
+## Version *n* Wish List
