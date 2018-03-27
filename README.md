@@ -21,7 +21,13 @@ If not stepping stones next to "E", return false.
 
 Else, for each stepping stone next to "E":
   
+  replace the stepping stone with the "E"
   
+  if the maze can be solved, return true
+  
+  recover the stepping stone and put the "E" back
+
+return false
 
 ## Classes
 ## Version *n* Wish List
