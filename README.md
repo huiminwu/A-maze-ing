@@ -12,6 +12,8 @@ legal means
 - a path cannot go through the same point twice
 ## Recursive Abstraction
 Given a maze, the recursive abstraction can solve a maze with one less stepping stone (perhaps multiple times) and the "E" moved over.
+## Base Case
+The treasure and explorer are next to each other or the explorer has nowhere to go.
 ## Algorithm
 If "E" and "0" are adjacent, return true.
 
@@ -22,3 +24,5 @@ Else:
   For each stepping stone next to "E":
   
     stuff
+## Classes
+## Version*n* Wish List
