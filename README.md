@@ -16,9 +16,11 @@ Given a maze, the recursive abstraction can solve a maze with one less stepping 
 The treasure and explorer are next to each other or the explorer has nowhere to go.
 ## Algorithm
 ```
+if "E" is in a wall, return false.
+
 if "E" and "0" are adjacent, return true.
 
-if not stepping stones next to "E", return false.
+if no stepping stones next to "E", return false.
 
 else, for each stepping stone next to "E":
   
