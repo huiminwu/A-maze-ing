@@ -13,20 +13,20 @@ legal means
 ## Recursive Abstraction
 Given a maze, the recursive abstraction can solve a maze with one less stepping stone (perhaps multiple times) and the "E" moved over.
 ## Base Case
-The treasure and explorer are next to each other or the explorer has nowhere to go.
+The explorer is on the treasure or the explorer is in the lava.
 ## Algorithm
 ```
-if "E" is in a wall, return false.
+if "E" is in the lava, return false.
 
-if "E" and "0" are adjacent, return true.
+if "E" is on the treasure, return true.
 
-check the four directions for stepping stones next to "E".
+otherwise, "E" is on a stepping stone.
 
-for each stepping stone next to "E":
+for each direction (up, down, left, right) from "E":
   
-   replace the stepping stone with the "E"
+   remove the stepping stone that "E" is on and move the "E" one step in that direction
   
-   if the maze can be solved, return true
+   invoke the recursive abstraction: if the maze can be solved, return true
   
    recover the stepping stone and put the "E" back
 
