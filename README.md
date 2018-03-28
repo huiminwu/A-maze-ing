@@ -20,9 +20,9 @@ if "E" is in a wall, return false.
 
 if "E" and "0" are adjacent, return true.
 
-if no stepping stones next to "E", return false.
+check the four directions for stepping stones next to "E".
 
-else, for each stepping stone next to "E":
+for each stepping stone next to "E":
   
    replace the stepping stone with the "E"
   
