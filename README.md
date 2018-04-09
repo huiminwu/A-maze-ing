@@ -18,19 +18,19 @@ The explorer is on the treasure or the explorer is in the lava.
 
 ## Algorithm
 ```
-if "E" is in the lava, return false.
+if the explorer is in the lava, return false.
 
-if "E" is on the treasure, return true.
+if the explorer is on the treasure, return true.
 
-otherwise, "E" is on a stepping stone.
+otherwise, the explorer is on a stepping stone.
 
-for each direction (up, down, left, right) from "E":
+for each direction (up, down, left, right) from the explorer:
   
-   remove the stepping stone that "E" is on and move the "E" one step in that direction
+   remove the stepping stone that the explorer is on and move one step in that direction
   
    invoke the recursive abstraction: if the maze can be solved, return true
   
-   recover the stepping stone and put the "E" back
+   move the explorer in the opposite direction and put back the stepping stone
 
 return false
 ```
