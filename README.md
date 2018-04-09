@@ -9,11 +9,13 @@ Navigate a maze form start to finish
 legal means
 - don’t cross the walls
 - right-angle turns only
-- a path cannot go through the same point twice
+
 ## Recursive Abstraction
-Given a maze, the recursive abstraction can solve a maze with one less stepping stone (perhaps multiple times) and the "E" moved over.
+Given a maze, the recursive abstraction can solve a maze with one fewer stepping stone (perhaps multiple times).
+
 ## Base Case
 The explorer is on the treasure or the explorer is in the lava.
+
 ## Algorithm
 ```
 if "E" is in the lava, return false.
