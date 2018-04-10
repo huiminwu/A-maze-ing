@@ -7,7 +7,7 @@ Returns the Boolean value of the statement “the maze is navigable, having a le
 Navigate a maze from start to finish
 
 legal means
-- don’t cross the walls
+- don’t go on lava
 - right-angle turns only
 
 ## Recursive Abstraction
