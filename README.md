@@ -4,7 +4,7 @@ Milan Haiman, Hui Min Wu
 ## Statement of Problem
 Returns the Boolean value of the statement “the maze is navigable, having a legal travel path that is continuous from start point to existing treasure”
 
-Navigate a maze form start to finish
+Navigate a maze from start to finish
 
 legal means
 - don’t cross the walls
