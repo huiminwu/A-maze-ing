@@ -2,7 +2,7 @@
 ## Personel
 Milan Haiman, Hui Min Wu
 ## Statement of Problem
-Returns the Boolean value of the statement “the maze is navigable, having a legal travel path that is continuous from start point to existing treasure”
+Returns the boolean value of the statement “the maze is navigable, having a legal travel path that is continuous from start point to existing treasure”
 
 Navigate a maze from start to finish
 
