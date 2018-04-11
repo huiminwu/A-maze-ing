@@ -30,7 +30,7 @@ for each direction (up, down, left, right) from the explorer:
   
    invoke the recursive abstraction: if the maze can be solved, return true
   
-   move the explorer in the opposite direction and put back the stepping stone
+   revert maze back to the most recent snapshot
 
 return false
 ```
