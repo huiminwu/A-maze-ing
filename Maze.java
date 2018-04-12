@@ -13,6 +13,7 @@
  */
 import java.util.Scanner;
 
+
 public class Maze {
 
     // MazeTerminal named constants
@@ -21,13 +22,15 @@ public class Maze {
     public final static int STEPPING_STONE = 2;
     
     // directions that can be searched
-    public final static int EAST =  1;
-    public final static int NORTH = 2;
-    public final static int WEST =  4;
-    public final static int SOUTH = 8;
-       /* Values are pretty arbitrary. Values of 2^n might be useful
-          in the unlikely event that we ever want to add north-west, etc.:
-          2+4 --> 6  */
+    
+
+    // public final static int EAST =  1;
+    // public final static int NORTH = 2;
+    // public final static int WEST =  4;
+    // public final static int SOUTH = 8;
+        // Values are pretty arbitrary. Values of 2^n might be useful
+        //   in the unlikely event that we ever want to add north-west, etc.:
+        //   2+4 --> 6  
     
     private int[][] maze;
     private final static int MAX_RANKS = 64;
@@ -152,7 +155,7 @@ public class Maze {
       
       @precondition: explorer starts in a valid position
      */
-    public void go( int direction)  { 
+    public void go( Direction direction)  { 
         switch( direction) {
             case EAST:
                 explorerPosition = explorerPosition.add( 0, 1);

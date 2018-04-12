@@ -15,6 +15,8 @@ public class UserOfMazeSolver {
 
         MazeSolver solver = new MazeSolver( displayer);
         System.out.println(solver.solve(maze));
+
+        
         
 
     }
