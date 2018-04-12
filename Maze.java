@@ -92,15 +92,15 @@ public class Maze {
 
         this.rankCount = old.rankCount;
 
-        System.out.println(rankCount); // debugging
+        //System.out.println(rankCount); // debugging
 
         this.maze = new int[MAX_RANKS][];
 
-        System.out.println(old.toString()); // debugging
+        //System.out.println(old.toString()); // debugging
 
         for(int i = 0; i < rankCount; i++) {
             this.maze[i] = old.maze[i].clone();
-            System.out.println(i); // debugging
+            //System.out.println(i); // debugging
         }
 
 
