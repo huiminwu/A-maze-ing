@@ -38,6 +38,16 @@ return false
 ```
 
 ## Classes
+Maze
+  
+  Vector
+
+UserOfMaze
+Displayer
+MazeSolver
+UserOfMazeSolver
+
+
 ## Version *n* Wish List
 
 Change all Walls to Lava
