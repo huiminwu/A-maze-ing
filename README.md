@@ -51,3 +51,7 @@ UserOfMazeSolver
 ## Version *n* Wish List
 
 Change all Walls to Lava
+
+## Known Bugs
+
+None
