@@ -39,3 +39,5 @@ return false
 
 ## Classes
 ## Version *n* Wish List
+
+Change all Walls to Lava
