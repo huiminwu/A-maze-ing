@@ -13,21 +13,21 @@ public class MazeSolver {
             return true;
         }
         Maze snapshot = new Maze(maze);
-        // displayer.atTopOfWindow(snapshot.toString() + "snapshot initial");
+        // displayer.atTopOfWindow(snapshot.toString() + "snapshot initial"); // debugging
         for(Direction direction : Direction.values()) {
             maze.dropA(maze.WALL);
-            // displayer.atTopOfWindow(maze.toString() + "drop WALL");
-            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after drop WALL");
+            // displayer.atTopOfWindow(maze.toString() + "drop WALL"); // debugging
+            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after drop WALL"); // debugging
             maze.go(direction);
             // displayer.atTopOfWindow(maze.toString() + "went " + direction); // the real one
 
-            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after went " + direction);
+            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after went " + direction); // debugging
             if(solve(maze)) {
                 return true;
             }
             maze = new Maze(snapshot);
-            // displayer.atTopOfWindow(maze.toString() + "restored snapshot");
-            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after restored snapshot");
+            // displayer.atTopOfWindow(maze.toString() + "restored snapshot"); // debugging
+            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after restored snapshot"); // debugging
         }
         return false;
     }
