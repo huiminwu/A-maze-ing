@@ -38,13 +38,14 @@ return false
 ```
 
 ## Classes
-Maze
-  
-  Vector
+Maze Vector
 
 UserOfMaze
+
 Displayer
+
 MazeSolver
+
 UserOfMazeSolver
 
 
