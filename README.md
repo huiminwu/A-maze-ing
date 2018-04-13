@@ -53,6 +53,8 @@ UserOfMazeSolver
 
 Change all Walls to Lava
 
+Show the path of the explorer
+
 ## Known Unsolved Bugs
 
 None
