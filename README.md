@@ -52,6 +52,6 @@ UserOfMazeSolver
 
 Change all Walls to Lava
 
-## Known Bugs
+## Known Unsolved Bugs
 
 None
