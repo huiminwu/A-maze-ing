@@ -51,12 +51,13 @@ UserOfMazeSolver
 
 ## Version *n* Wish List
 
-Change all Walls to Lava
-
-Show the path of the explorer
-
 ## Known Unsolved Bugs
 
 None
 
 ## v1
+Change all Walls to Lava
+
+Show the path of the explorer
+
+
