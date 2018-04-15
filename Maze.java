@@ -2,7 +2,7 @@
   Represent a Maze with an Explorer in it
   
   A "MazeTerminal" is...
-    o  a wall element; or
+    o  a lava element; or
     o  a treasure; or
     o  a stepping stone.
   
@@ -18,7 +18,7 @@ public class Maze {
 
     // MazeTerminal named constants
     public final static int TREASURE = 0;
-    public final static int WALL = 1;
+    public final static int LAVA = 1;
     public final static int STEPPING_STONE = 2;
     
     // directions that can be searched
@@ -71,8 +71,8 @@ public class Maze {
                 int element;  // value destined for maze array
                 if(      inChar.equals("0"))  element = TREASURE;
                 else if( inChar.equals("*"))  element = STEPPING_STONE;
-                // spaces and unrecognised characters are walls
-                else                          element = WALL;
+                // spaces and unrecognised characters are lavas
+                else                          element = LAVA;
                 maze[ rank][ file] = element;
             }
         }
@@ -120,7 +120,7 @@ public class Maze {
           */
         final String outChar = "0 *";  // no explorer here
         final String exOnTop = "!Ee";  /* explorer on top of
-           treasure, wall, stepping stone, etc. */
+           treasure, lava, stepping stone, etc. */
 
         // build string for top and bottom separators
         String aboveAndBelow = "-";
@@ -185,12 +185,12 @@ public class Maze {
 
     /**
       @return the MazeElement that the explorer is on.
-              When the explorer's position is null, return WALL
+              When the explorer's position is null, return LAVA
               because the user-programmer's code is expected to benefit
               from that equivalence.
      */
     public int explorerIsOnA() {
-        if( explorerPosition == null) return WALL;
+        if( explorerPosition == null) return LAVA;
         else return maze[ explorerPosition.rank][ explorerPosition.file];
     }
 

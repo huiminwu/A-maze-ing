@@ -56,7 +56,7 @@ UserOfMazeSolver
 None
 
 ## v1
-Change all Walls to Lava
+Change all Walls (except this one) to Lava
 
 Show the path of the explorer
 

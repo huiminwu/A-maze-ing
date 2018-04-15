@@ -7,7 +7,7 @@ public class MazeSolver {
         this.displayer = displayer;
     }
     public boolean solve(Maze maze) {
-        if (maze.explorerIsOnA() == maze.WALL) {
+        if (maze.explorerIsOnA() == maze.LAVA) {
             return false;
         } else if (maze.explorerIsOnA() == maze.TREASURE) {
             return true;
@@ -15,9 +15,9 @@ public class MazeSolver {
         Maze snapshot = new Maze(maze);
         // displayer.atTopOfWindow(snapshot.toString() + "snapshot initial"); // debugging
         for(Direction direction : Direction.values()) {
-            maze.dropA(maze.WALL);
-            // displayer.atTopOfWindow(maze.toString() + "drop WALL"); // debugging
-            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after drop WALL"); // debugging
+            maze.dropA(maze.LAVA);
+            // displayer.atTopOfWindow(maze.toString() + "drop LAVA"); // debugging
+            // displayer.atTopOfWindow(snapshot.toString() + "snapshot after drop LAVA"); // debugging
             maze.go(direction);
             // displayer.atTopOfWindow(maze.toString() + "went " + direction); // the real one
 

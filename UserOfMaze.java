@@ -83,8 +83,8 @@ public class UserOfMaze {
                           + ", leaving explorer on a " + maze.explorerIsOnA()
                           +      System.lineSeparator()
                           + maze + System.lineSeparator());
-        maze.dropA( Maze.WALL);
-        System.out.println( "dropped a " + Maze.WALL
+        maze.dropA( Maze.LAVA);
+        System.out.println( "dropped a " + Maze.LAVA
                           + ", leaving explorer on a " + maze.explorerIsOnA()
                           +      System.lineSeparator()
                           + maze + System.lineSeparator());
@@ -108,7 +108,7 @@ public class UserOfMaze {
 
         // change the old
         old.go( Maze.NORTH);
-        old.dropA( Maze.WALL);
+        old.dropA( Maze.LAVA);
         System.out.println(
                             "modified old" + System.lineSeparator()
                           + old + System.lineSeparator()
