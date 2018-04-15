@@ -20,9 +20,9 @@ public class Maze {
     public final static int TREASURE = 0;
     public final static int LAVA = 1;
     public final static int STEPPING_STONE = 2;
-    
+    public final static int CRUMB = 3;
+
     // directions that can be searched
-    
 
     // public final static int EAST =  1;
     // public final static int NORTH = 2;
@@ -118,8 +118,8 @@ public class Maze {
         /* characters that represent elements of the maze,
            indexed by the numbers used to represent elements
           */
-        final String outChar = "0 *";  // no explorer here
-        final String exOnTop = "!Ee";  /* explorer on top of
+        final String outChar = "0 *+";  // no explorer here
+        final String exOnTop = "!EeE";/* explorer on top of
            treasure, lava, stepping stone, etc. */
 
         // build string for top and bottom separators
