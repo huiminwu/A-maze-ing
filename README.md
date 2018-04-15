@@ -18,7 +18,7 @@ The explorer is on the treasure or the explorer is in the lava.
 
 ## Algorithm
 ```
-if the explorer is in the lava or on a crumb, return false.
+if the explorer is in the lava, return false.
 
 if the explorer is on the treasure, return true.
 
