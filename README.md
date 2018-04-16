@@ -14,7 +14,7 @@ legal means
 Given a maze, the recursive abstraction can solve a maze with one fewer stepping stone (perhaps multiple times).
 
 ## Base Case
-The explorer is on the treasure or the explorer is in the lava.
+The explorer is on the treasure or the explorer is in the lava (including crumbs).
 
 ## Algorithm
 ```
@@ -28,7 +28,7 @@ take a snapshot
 
 for each direction (up, down, left, right) from the explorer:
   
-   pour lava and move one step in that direction
+   drop a crumb (counts as lava) and move one step in that direction
   
    invoke the recursive abstraction: if the maze can be solved, return true
   
